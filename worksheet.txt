@@ -1,13 +1,13 @@
 Day 1:
 progress -->
     Ehab:
-    
-    
+        - changed layout template
+        - finished nav bar and almost slider
     Eyad:
 new skills learnt -->
     Ehab:
-    
-    
+        - how to make slider
+        - digged more in responsive designs
     Eyad:
     
     
