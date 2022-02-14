@@ -1,0 +1,684 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 1.5em 0;
+}
+
+header a{
+    text-decoration: none;
+}
+.social{
+    display: flex;
+    gap: 1em;
+}
+.social a{
+    color: rgb(75, 75, 75);
+}
+
+.call-us a{
+    color: rgb(126, 126, 126);
+}
+
+.navigation-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+
+}
+button{
+    cursor: pointer;
+}
+.navigation-bar button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(75, 75, 75);
+}
+
+.navigation-bar h1{
+    font-size: 2.5em;
+    color: rgb(24, 24, 24);
+}
+
+.navigation-bar h1::first-letter{
+    color: rgb(0, 128, 100);
+}
+.navigation-bar i{
+    font-size: 1.5em;
+}
+.menu{
+    display: none;
+    gap: 1.5em;
+
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    font-size: 1.2em;
+}
+.tools{
+    display: flex;
+    gap: 1em;
+}
+
+#cart{
+    position: relative;
+}
+
+#cart::after{
+    content: "0";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 128, 100);
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    top:-10px;
+    right: -10px;
+}
+
+.drop-down-menu{
+    display: none;
+    flex-wrap: wrap;
+    z-index: 99;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+}
+
+.drop-down-menu a{
+    width: 100%;
+    padding: 1em 1em;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    border-bottom: 1px solid black;
+}
+
+.search{
+    display: none;
+    gap:0.5em;
+    padding: 1.5em 0.5em;
+    z-index: 99;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+}
+
+#search-value{
+    width: 85%;
+    height: 1.5em;
+    border: none;
+    outline: none;
+    padding: 1.5em 1em;
+    border-bottom: 1px solid  rgb(0, 128, 100);
+    color: rgb(32, 32, 32);
+    font-size: 1em;
+    font-weight: 700;
+
+}
+
+#search-for{
+    color: rgb(75, 75, 75);
+    font-size: 1.2em;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.user-container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.514);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.login, .signup{
+    width: 90%;
+    max-width: 25em;
+    height: 22em;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    
+}
+
+.signup{
+    display: none;
+    height: 25em;
+}
+
+#close-login, #close-signup{
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(75, 75, 75);
+    border: none;
+    outline: none;
+}
+
+#close-login i, #close-signup i{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.login form, .signup form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:4em;
+    gap: 0.5em;
+}
+
+.login form label, .signup form label{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color:rgb(75, 75, 75);
+}
+
+.login form input, .signup form input{
+    width: 90%;
+    height: 3em;
+    padding: 0.2em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(0, 128, 100);
+    font-size: 1em;
+}
+
+.login form input[type = "submit"],
+.signup form input[type = "submit"]{
+    background-color: rgb(0, 128, 100);
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+.login form input[type = "submit"]:hover,
+.login form input[type = "submit"]:hover{
+    background-color: rgb(5, 110, 87);
+    transition: 0.5s;
+}
+
+.other-login-actions,
+.other-signup-actions{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 0.5em;
+    position: absolute;
+    bottom: 2.5em;
+    left: 1.2em;
+
+}
+
+.other-login-actions a{
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+}
+
+.other-login-actions button,
+.other-signup-actions button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-decoration: underline;
+    color: rgb(75, 75, 75);
+    font-size: 1em;
+}
+
+.slider-container{
+    width: 100%;
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+}
+
+.slider-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.slider-content h2{
+    font-size: 1.5em;
+    color: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+}
+.slider-content h2 span{
+    color: rgb(0, 128, 100);
+    font-weight: bold;
+}
+
+.slider-content a{
+    text-decoration: none;
+    padding: 0.5em;
+    max-width: 7em;
+    font-size: 1.2em;
+    color: white;
+    background-color: rgb(0, 128, 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands, .recently-added{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    width: 100%;
+    padding: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands h2{
+    color: rgb(43, 43, 43);
+    padding: 0.5em;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    border: 1px solid rgb(43, 43, 43);
+}
+
+.brands ul{
+    list-style: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
+}
+
+
+.brands ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    gap: 0.5em;
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+}
+
+
+
+
+
+.brands ul li a div{
+    width: 100%;
+    height: 10em;
+    border-radius: 10px;
+    padding: 1.5em;
+    transition: 0.5s;
+}
+
+.brands ul li a div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.5s;
+}
+
+
+
+.recently-added h2{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    padding: 0.5em;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    border: 1px solid white;
+    outline: 4px solid rgb(43, 43, 43);
+}
+
+.recently-added ul{
+    list-style: none;
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+.recently-added ul li{
+    width: 18em;
+    height: 18em;
+    background-color: #dcfafb;
+    border-radius: 10px;
+    padding: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.img-container{
+    width: 100%;
+    padding: 0.5em;
+    position: relative;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-container button{
+    font-size: 1.3em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+
+}
+
+.like-product:hover{
+    color: rgb(192, 26, 26);
+    transition: 0.5s;
+
+}
+
+.info-container span{
+    font-size: 1.2em;
+}
+
+.on-sale{
+    background-color: #ffe8df !important;
+}
+
+.on-sale::after{
+    content: "30% off";
+    width: 6em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 1em;
+    right: -0.5em;
+    z-index: 3;
+}
+.recently-added ul li::before{
+    content: "";
+}
+.recently-added ul li:hover::before{
+    content: "View";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 92, 92, 0.329);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+    z-index: 2;
+    height: 70%;
+    font-size: 1.5em;
+    transition: 0.5s;
+
+}
+
+.summer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+    background-image: url(../images/—Pngtree—poly\ cost-effective\ discount\ offer\ clearance_976313.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 25vh;
+}
+
+.summer h2{
+    width: 70%;
+    font-size: 1.2em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.summer h2 a{
+    text-decoration: none;
+    color: #ff0076;
+    background-color: white;
+    width: fit-content;
+    padding: 0.5em;
+    font-size: 0.8em;
+}
+.summer-img{
+    width: 10em;
+    height: 10em;
+}
+.summer-img img{
+    animation-name: hello-summer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2em;
+    position: relative;
+    padding: 2em 0;
+}
+.contact-us::before{
+    content: "";
+    width: 90%;
+    height: 1px;
+    background-color: rgb(32, 32, 32);
+    position: absolute;
+    top: 0;
+}
+.contact-us div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    width: 80%;
+}
+.contact-us textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(0, 128, 100);
+    border-left: 2px solid rgb(0, 128, 100);
+    padding: 0.5em;
+    font-size: 1.2em;
+    color: rgb(43, 43, 43);
+}
+
+.contact-us button{
+    background-color: rgb(0, 128, 100);
+    color: white;
+    font-size: 1.2em;
+    max-width: 15em;
+    width:80%;
+    height: 2em;
+    border: none;
+    outline: none;
+}
+.contact-us h2{
+    color: rgb(43, 43, 43);
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 128, 100);
+    color: white;
+    padding: 2em 0;
+    gap: 1em;
+}
+.about-us p{
+    text-align: center;
+    width: 80%;
+    max-width: 25em;
+}
+
+.about-us div{
+    width: 30%;
+    max-width: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-us div a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(3, 92, 73);
+    color: white;
+    font-size: 1em;
+    padding: 1em 2.5em;
+}
+footer span{
+    font-weight: bold;
+}
+
+@media (min-width: 650px) {
+    #menu{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+    .slider-content a{
+        max-width: 10em;
+    }
+    .slider-container{
+        padding: 8em 5em;
+        height: 65vh;
+    }
+
+    .slider-content h2{
+        font-size: 5em;
+    }
+
+    .brands ul{
+        list-style: none;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .brands ul li a div{
+        height: 15em;
+        padding: 2em;
+    }
+
+    .brands ul li a:hover div{
+        padding: 1.8em;
+        transition: 0.5s;
+    }
+
+    .brands ul li a:hover div img{
+        transform: rotateZ(-15deg);
+        transition: 0.5s;
+    }
+
+    .summer{
+        height: 55vh;
+        padding: 0 2em;
+    }
+    .summer h2{
+        font-size: 2em;
+    }
+    .summer-img{
+        width: 20em;
+        height: 20em;
+    }
+
+    .contact-us div{
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 900px) {
+    
+}
+
+@keyframes hello-summer{
+    0%{
+        transform: rotateZ(15deg);
+    }
+    50%{
+        transform: rotateZ(-15deg);
+    }
+    100%{
+        transform: rotateZ(15deg);
+    }
+}
+/* bla bla bla */
+
+
