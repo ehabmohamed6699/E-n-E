@@ -32,7 +32,8 @@
     height: 65vh;
     display: flex;
     flex-direction: column;
-    position: relative;}
+    position: relative;
+}
 .product-list ul li::before{
     content: "10% off";
     background-color: rgb(236, 26, 26);

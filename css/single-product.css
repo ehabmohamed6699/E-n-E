@@ -32,8 +32,8 @@ section{
   height: 90vw;
   margin: 10px;
   border-radius: 15px;
-  background-size: cover;
-  background-position: center;
+  background-size:cover;
+  background-position:top;
 }
 
 .small-images{
@@ -50,7 +50,15 @@ section{
   margin-right: 7px;
   object-fit: cover;
   border-radius: 10px;
+  position: relative;
 }
+
+.active{
+  border: 4px solid orange;
+  position: relative;
+}
+
+
 
 .txt-section{
   align-items: flex-start;

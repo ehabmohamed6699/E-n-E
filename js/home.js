@@ -82,11 +82,17 @@ let images = document.getElementsByClassName('thumb');
 let mainImage = document.getElementById('main-image')
 for (let i = 0; i < images.length; i++) {
 
+
     let url = images[i].getAttribute("src");
     let index = url.indexOf('-thumbnail');
     let newUrl = url.substring(0, index)
     images[i].onclick = function () {
-        mainImage.style.backgroundImage = `url(${newUrl}.jpg)`
+        
+        mainImage.style.backgroundImage = `url(${newUrl}.jpg)`;
+        for (let ii = 0; ii < images.length; ii++) {
+            images[ii].classList.remove("active");            
+        }
+        images[i].classList.add('active')
     }
 }
 
