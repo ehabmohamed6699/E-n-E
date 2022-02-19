@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +7,11 @@
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/fontawesome.min.css">
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/men.css">
     <link rel="stylesheet" href="../css/lightslider.css">
     <script src="../js/Jquery.js"></script>
     <script src="../js/lightslider.js"></script>
-    <title>E n' E | Home</title>
+    <title>E n' E | Sportive et Elegante</title>
 </head>
 <body>
     <header>
@@ -87,102 +87,21 @@
             
         </div>
     </div>
-
-    <ul id="adaptive" class="cs-hidden">
-        <li class="item-a">
-            <div class="slider-container" style="background-image: url(../images/slider-2.jpg);">
-                <div class="slider-content">
-                    <h2>Get up to <span>70% off</span></h2>
-                    <a href="#">Shop now</a>
-                </div>
-            </div>
-        </li>
-        <li class="item-b">
-            <div class="slider-container" style="background-image: url(../images/slider-1.jpg);">
-                <div class="slider-content">
-                    <h2>Get up to <span>70% off</span></h2>
-                    <a href="#">Shop now</a>
-                </div>
-            </div>
-        </li>
-        <li class="item-c">
-            <div class="slider-container" style="background-image: url(../images/slider-3.jpg);">
-                <div class="slider-content">
-                    <h2>Get up to <span>70% off</span></h2>
-                    <a href="#">Shop now</a>
-                </div>
-            </div>
-        </li>
-        <li class="item-d">
-            <div class="slider-container" style="background-image: url(../images/slider-4.jpg);">
-                <div class="slider-content">
-                    <h2>Get up to <span>70% off</span></h2>
-                    <a href="#">Shop now</a>
-                </div>
-            </div>
-        </li>
-    </ul>
-    
-    <div class="brands">
-        <h2>Featured Bradns</h2>
-        <ul>
-            
-            <li>
-                <a href="#">
-                    <div style="background-color: rgb(255, 130, 47);">
-                        <img src="../images/maxresdefault-removebg-preview.png" alt="">
-                    </div>
-                    <h3>Nike</h3>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div style="background-color: rgb(81, 79, 189);">
-                        <img src="../images/816Z6rQLzJL._AC_SL1500_-removebg-preview.png" alt="">
-                    </div>
-                    <h3>Adidas</h3>
-                </a>
-            </li>
-            <li>
-                <a href="#" >
-                    <div style="background-color: rgb(184, 46, 46);">
-                        <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                    </div>
-                    <h3>New Balance</h3>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div style="background-color: rgb(18, 240, 184);">
-                        <img src="../images/615B7mH0FzL._UL1500_-removebg-preview.png" alt="">
-                    </div>
-                    <h3>Reebok</h3>
-                </a>
-            </li>
-            <li>
-                <a href="#" >
-                    <div style="background-color: rgb(122, 122, 122);">
-                        <img src="../images/71pANwrAA0L._AC_UY1000_-removebg-preview.png" alt="">
-                    </div>
-                    <h3>Puma</h3>
-                </a>
-            </li>
-            <li>
-                <a href="#" >
-                    <div style="background-color: rgb(255, 62, 229);">
-                        <img src="../images/0005120_-skechers--removebg-preview.png" alt="">
-                    </div>
-                    <h3>Skecher</h3>
-                </a>
-            </li>
-        </ul>
-    </div>
     <div class="summer">
         <h2>New summer collection next month <a href="#">Learn More</a></h2>
         <div class="summer-img"><img src="../images/posters-hello-summer-banner-typography-poster-with-sun-and-lettering-sunny-design-for-beach-party-summer-collection-clothes-social-media-content.jpg-removebg-preview.png" alt=""></div>
     </div>
-    <div class="recently-added">
-        <h2 class="recently-added-title">Recently added</h2>
+    <div class="product-list-tools">
+        <p>Sort by: </p>
+        <select name="sort" id="">
+            <option value="top-rated" selected>Top rated</option>
+            <option value="low-to-high">Low-to-high</option>
+            <option value="high-to-low">High-to-low</option>
+            <option value="most-ordered">Most ordered</option>
+        </select>
+    </div>
+    
+    <div class="product-list">
         <ul>
             <li>
                 <div class="product-img-container">
@@ -414,15 +333,64 @@
                     <div class="price"><span>125$</span> 110$</div>
                 </div>
             </li>
+            <li>
+                <div class="product-img-container">
+                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
+                </div>
+                <div class="product-tools">
+                    <button id="add-to-cart">Add to cart</button>
+                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class="product-description">
+                    <div class="rate">
+                        <p>rate</p>
+                        <div class="rate-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                    </div>
+                    <h2>New Balance NB99 A13</h2>
+                    <div class="price"><span>125$</span> 110$</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-img-container">
+                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
+                </div>
+                <div class="product-tools">
+                    <button id="add-to-cart">Add to cart</button>
+                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class="product-description">
+                    <div class="rate">
+                        <p>rate</p>
+                        <div class="rate-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                    </div>
+                    <h2>New Balance NB99 A13</h2>
+                    <div class="price"><span>125$</span> 110$</div>
+                </div>
+            </li>
         </ul>
-    </div>
-    <div class="contact-us">
-        <h2>Message us</h2>
-        <div>
-            <textarea name="messsage" id="message" cols="30" rows="4" placeholder="Write your message here"></textarea>
-            <button id="send">Send</button>
+
+        <div class="next-previous">
+            <button><i class="fa-solid fa-angles-left"></i></button>
+            <div>
+                <span>Previous</span>
+                <span>Next</span>
+            </div>
+            <button><i class="fa-solid fa-angles-right"></i></button>
         </div>
     </div>
+
     <div class="about-us">
         <h2>E n' E</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime pariatur veniam dolor ex aut deleniti eligendi recusandae fugit vel in consequatur, iste tempore, necessitatibus omnis natus. Eligendi debitis asperiores aperiam!</p>
@@ -436,17 +404,7 @@
     <footer>
         <p>Copyrights &copy; 2022 E n' E. Designed by: <span>Ehab Mohamed and Eyad Elsherif</span></p>
     </footer>
+    
     <script src="../js/home.js"></script>
-
-    <script>
-        $(document).ready(function() {
-        $('#adaptive').lightSlider({
-            adaptiveHeight:true,
-            auto:true,
-            item:1,
-            slideMargin:0,
-            loop:true
-        });
-        });
-    </script>
 </body>
+</html>

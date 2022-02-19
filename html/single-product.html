@@ -4,18 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="../css/feedback.css">
-  <link rel="stylesheet" href= "../css/feedback-media.css">
-  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/single-product.css">
   <link rel="stylesheet" href="../css/nav-footer.css">
-  <title>E n' E | Feedback</title>
+  <link rel="stylesheet" href="../css/fontawesome.min.css">
+  <link rel="stylesheet" href="../css/all.min.css">
+
+    <title>E n' E | Single Product</title>
 </head>
 <body>
 
-
+  
   <!-- nav start -->
   <header>
     <div class="social">
@@ -94,64 +92,39 @@
   <!-- nav end -->
 
   <main>
-    <div class="container1 main">
-      <div class="image"> 
-        <img src="../images/9a37aa53135e03174732a3d2c531a9fa.jpg" alt="girl wearing sneakers">
+    <section class="img-section">
+      <div id="main-image"></div>
+      <div class="small-images">
+        <img src="../images/image-product-1-thumbnail.jpg" alt="" class="thumb">
+        <img src="../images/image-product-2-thumbnail.jpg" alt="" class="thumb active">
+        <img src="../images/image-product-3-thumbnail.jpg" alt="" class="thumb">
+        <img src="../images/image-product-4-thumbnail.jpg" alt="" class="thumb">
       </div>
-      <div class="inner-container">
-        <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          In, fugit veniam, veritatis nemo quasi corrupti cum velit 
-          explicabo sapiente culpa, pariatur quod? Beatae rerum, consequuntur 
-          minus commodi quaerat sequi corrupti.
-        </p>
-        <p class="customer">- Eyad Alsherif</p>
-      </div>
-    </div>
-    <div class="container2 main">
-      <div class="image">
-        <img src="../images/9939a75f291998a67eace01fcd21dd42.jpg" alt="girl wearing sneakers">
-      </div>
-      <div class="inner-container">
-        <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          In, fugit veniam, veritatis nemo quasi corrupti cum velit 
-          explicabo sapiente culpa, pariatur quod? Beatae rerum, consequuntur 
-          minus commodi quaerat sequi corrupti.
-        </p>
-        <p class="customer">- Eyad Alsherif</p>
-      </div>
-    </div>
-    <div class="container3 main">
-      <div class="image">
-        <img src="../images/a91eccc4e694cd6666d5529cf4947e33.jpg" alt="man wearing sneakers">
-      </div>
-      <div class="inner-container">
-        <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          In, fugit veniam, veritatis nemo quasi corrupti cum velit 
-          explicabo sapiente culpa, pariatur quod? Beatae rerum, consequuntur 
-          minus commodi quaerat sequi corrupti.
-        </p>
-        <p class="customer">- Eyad Alsherif</p>
-      </div>
-    </div>
-    <div class="container4 main">
-      <div class="image">
-        <img src="../images/9939a75f291998a67eace01fcd21dd42.jpg" alt="man wearing sneakers">
-      </div>
-      <div class="inner-container">
-        <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          In, fugit veniam, veritatis nemo quasi corrupti cum velit 
-          explicabo sapiente culpa, pariatur quod? Beatae rerum, consequuntur 
-          minus commodi quaerat sequi corrupti.
-        </p>
-        <p class="customer">- Eyad Alsherif</p>
-      </div>
-    </div>
-  </main>
+    </section>
 
+    <section class="txt-section">
+      <p class="company">Nike</p>
+      <p class="name">Fall limited edition sneakers</p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque a quia, perspiciatis qui voluptate voluptas, libero veritatis animi quis reprehenderit adipisci eligendi incidunt! Esse ullam magni quidem nemo molestias!</p>
+      <div class="price">
+        <p class="current">$125.00</p>
+        <p class="discount">50%</p>
+        <p class="previous">$250.00</p>
+      </div>
+      <div class="buy">
+        <div class="count">
+          <button class="plus">+</button>
+          <div class="num">0</div>
+          <button class="minus">-</button>
+        </div>
+        <button class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          add to cart
+        </button>
+      </div>
+    </section>
+  </main>
+  
   <!-- footer start -->
 
   <div class="about-us">
@@ -171,5 +144,6 @@
   <script src="../js/home.js"></script>
   
   <!-- footer end -->
+  
 </body>
 </html>

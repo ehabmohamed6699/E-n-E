@@ -15,6 +15,7 @@ let nextSlide = document.getElementById('next-slide');
 let preSlide = document.getElementById('pre-slide');
 let ads = document.getElementById('advertisement');
 
+
 menuBtn.onclick = function(){
     if(menuList.style.display === 'flex' ){
         menuList.style.display = 'none';
@@ -68,6 +69,32 @@ document.onscroll = function(){
     menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
 }
 
+
+let product = document.getElementsByClassName("product-tools");
+for (let index = 0; index < product.length; index++) {
+    product[index].onclick = function () {
+        location.href = "single-product.html";
+    };    
+}
+
+
+let images = document.getElementsByClassName('thumb');
+let mainImage = document.getElementById('main-image')
+for (let i = 0; i < images.length; i++) {
+
+
+    let url = images[i].getAttribute("src");
+    let index = url.indexOf('-thumbnail');
+    let newUrl = url.substring(0, index)
+    images[i].onclick = function () {
+        
+        mainImage.style.backgroundImage = `url(${newUrl}.jpg)`;
+        for (let ii = 0; ii < images.length; ii++) {
+            images[ii].classList.remove("active");            
+        }
+        images[i].classList.add('active')
+    }
+}
 
 
 

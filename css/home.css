@@ -18,7 +18,6 @@ header{
     gap: 2em;
     padding: 1.5em 0;
 }
-
 header a{
     text-decoration: none;
 }
@@ -65,7 +64,6 @@ button{
 .menu{
     display: none;
     gap: 1.5em;
-
 }
 .menu a{
     text-decoration: none;
@@ -357,8 +355,12 @@ button{
 }
 
 
-
-.recently-added h2{
+.recently-added{
+    padding: 1em 1.5em;
+    display: flex;
+    background-color: rgb(230, 230, 230);
+}
+.recently-added-title{
     background-color: rgb(43, 43, 43);
     color: white;
     padding: 0.5em;
@@ -369,104 +371,132 @@ button{
 }
 
 .recently-added ul{
-    list-style: none;
-    /* display: grid;
-    grid-template-columns: repeat(1,1fr); */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5em;
-}
-.recently-added ul li{
-    width: 18em;
-    height: 18em;
-    background-color: #dcfafb;
-    border-radius: 10px;
-    padding: 1.5em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
-    
-}
-.img-container{
-    width: 100%;
-    padding: 0.5em;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 
-.img-container img{
+.recently-added ul li{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;}
+.recently-added ul li::before{
+    content: "10% off";
+    background-color: rgb(236, 26, 26);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5em;
+}
+.recently-added ul li .product-tools{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(70, 70, 70, 0.288);
+    align-items: flex-end;
+    justify-content: center;
+    padding: 2em;
+    gap: 1em;
+    display: none;
+}
+.product-tools button{
+    outline: none;
+    border: none;
+    height: 2.5em;
+    font-size: 1em;
+}
+
+#add-to-cart{
+    width: 8em;
+    height: 2.5em;
+    font-size: 1em;
+    background-color: rgb(0, 128, 100);
+    color: white;
+    font-weight: 500;
+}
+
+#add-to-fav{
+    width: 3em;
+}
+
+.recently-added ul li .product-img-container{
+    width: 100%;
+    height: 70%;
+    padding: 2em;
+    background-color: rgb(216, 216, 216);
+}
+.product-img-container img{
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.info-container{
+.rate{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.info-container button{
-    font-size: 1.3em;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    transition: 0.5s;
-
-}
-
-.like-product:hover{
-    color: rgb(192, 26, 26);
-    transition: 0.5s;
-
-}
-
-.info-container span{
+.rate p{
     font-size: 1.2em;
+    color: rgb(0, 128, 100);
+    font-weight: bold;
 }
 
-.on-sale{
-    background-color: #ffe8df !important;
+.rate .rate-stars i{
+    color: rgb(255, 220, 21);
 }
 
-.on-sale::after{
-    content: "30% off";
-    width: 6em;
-    height: 2em;
+.product-description{
+    padding: 1em;
+    background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-    color: white;
-    position: absolute;
-    top: 1em;
-    right: -0.5em;
-    z-index: 3;
+    flex-direction: column;
+    gap: 0.5em;
 }
-.recently-added ul li::before{
+
+.product-description h2{
+    font-size: 1.2em;
+    color: rgb(43,43,43);
+}
+
+.price{
+    display: flex;
+    gap: 0.2em;
+}
+.price span{
+    color: red;
+    position: relative;
+}
+.price span::before{
     content: "";
-}
-.recently-added ul li:hover::before{
-    content: "View";
     width: 100%;
-    height: 100%;
-    background-color: rgba(92, 92, 92, 0.329);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    height: 1px;
+    background-color: red;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
-    border-top-left-radius:10px ;
-    border-top-right-radius: 10px;
-    z-index: 2;
-    height: 70%;
-    font-size: 1.5em;
-    transition: 0.5s;
+    transform: rotateZ(12deg);
+}
+
+
+@media (min-width: 515px){
+    .recently-added ul{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2em;
+    }
+
+
+
+    .recently-added ul li:hover .product-tools{
+        display: flex;
+        transition: 0.5s;
+    }
 
 }
 
@@ -610,6 +640,7 @@ footer span{
     }
     .menu{
         display: flex;
+
     }
     .slider-content a{
         max-width: 10em;
@@ -679,6 +710,5 @@ footer span{
         transform: rotateZ(15deg);
     }
 }
-/* bla bla bla */
 
 
