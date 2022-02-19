@@ -1,19 +1,24 @@
-@media screen and (min-width: 650px){
-	
-	main{
+@media screen and (min-width: 650px) {
+
+	main {
 		flex-direction: column;
 	}
-	.main{
+	.main {
 		flex-direction: row;
+		width: 85%;
 	}
-
-	.image{
+	.image {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-
-	.main:nth-child(even){
+	.main:nth-child(even) {
 		flex-direction: row-reverse;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.main{
+		width: 70%;
 	}
 }

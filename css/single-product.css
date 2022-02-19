@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section{
+  margin: 0px 20px 20px;
+  /* border: 3px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#main-image{
+  background-image: url(../images/image-product-1.jpg);
+  width: calc(100% - 20px);
+  height: 90vw;
+  margin: 10px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.small-images{
+  width: calc(100% - 20px);
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+}
+
+.small-images img{
+  height: 100px;
+  margin-right: 7px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.txt-section{
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.company{
+  color: orange;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.name{
+  font-size: 36px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.text{
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.price{
+  max-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+.current{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.discount{
+  color: rgb(255, 165, 0);
+  background-color: rgb(255, 240, 213);
+  margin-left: 15px;
+  border-radius: 5px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.previous{
+  color: #999;
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.buy{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.count{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.num{
+  margin: 0px 10px;
+}
+
+.count button{
+  background-color: transparent;
+  border: none;
+  padding:15px 10%;
+  color: orange;
+  font-weight: bolder;
+}
+
+.cart{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: orange;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  width: 40%;
+}
+
+@media screen and (min-width: 650px){
+
+  main{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  section{
+    width: 40%;
+    height: 600px;
+    margin: 10px;
+  }
+
+  #main-image{
+    height: 65vh;
+    overflow: auto;
+  }
+
+  .small-images{
+    height: 120px;
+  }
+}
