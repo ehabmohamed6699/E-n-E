@@ -1,410 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/all.min.css">
-    <link rel="stylesheet" href="../css/fontawesome.min.css">
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/men.css">
-    <link rel="stylesheet" href="../css/lightslider.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/men.css" />
+    <link rel="stylesheet" href="../css/lightslider.css" />
     <script src="../js/Jquery.js"></script>
     <script src="../js/lightslider.js"></script>
     <title>E n' E | Sportive et Elegante</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="social">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-        <div class="call-us">
-            <a href="tel:+201128336536">Call: +201128336536</a>
-        </div>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <div class="call-us">
+        <a href="tel:+201128336536">Call: +201128336536</a>
+      </div>
     </header>
     <div class="navigation-bar">
-        <h1>E n' E</h1>
-        <button id="menu"><i class="fa-solid fa-bars"></i></button>
-        <div class="menu">
-            <a href="home.html">Home</a>
-            <a href="men.html">Men</a>
-            <a href="women.html">Women</a>
-            <a href="feedback.html">Feedback</a>
-        </div>
-        <div class="tools">
-            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button id="user"><i class="fa-solid fa-user"></i></button>
-            <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
-        </div>
+      <h1>E n' E</h1>
+      <button id="menu"><i class="fa-solid fa-bars"></i></button>
+      <div class="menu">
+        <a href="home.html">Home</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="feedback.html">Feedback</a>
+      </div>
+      <div class="tools">
+        <button id="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button id="user"><i class="fa-solid fa-user"></i></button>
+        <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
     </div>
-    <div id = "drop-down" class="drop-down-menu">
+    <div id="drop-down" class="drop-down-menu">
       <a href="home.html">Home</a>
       <a href="men.html">Men</a>
       <a href="women.html">Women</a>
       <a href="feedback.html">Feedback</a>
     </div>
-    <div class="search" id = "search-box">
-        <input type="text" name="search" id="search-value" placeholder="Example: Nike">
-        <button id="search-for"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="search" id="search-box">
+      <input
+        type="text"
+        name="search"
+        id="search-value"
+        placeholder="Example: Nike"
+      />
+      <button id="search-for">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
     </div>
-    <div class="user-container" id = "user-container-content">
-        <div class="login" id = "login-form">
-            <button id="close-login">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            
-            <form action="">
-                <Label>Log In</Label>
-                <input type="email" id = "login-email" placeholder="example@example.com">
-                <input type="password" id = "login-password" placeholder="Password">
-                <input type="submit" value="Log in">
-            </form>
-            <div class="other-login-actions">
-                <a href="#">Forgot Your Password?</a>
-                <button id = "create-acc">Create Account</button>
-            </div> 
-            
+    <div class="user-container" id="user-container-content">
+      <div class="login" id="login-form">
+        <button id="close-login">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <form action="">
+          <label>Log In</label>
+          <input
+            type="email"
+            id="login-email"
+            placeholder="example@example.com"
+          />
+          <input type="password" id="login-password" placeholder="Password" />
+          <input type="submit" value="Log in" />
+        </form>
+        <div class="other-login-actions">
+          <a href="#">Forgot Your Password?</a>
+          <button id="create-acc">Create Account</button>
         </div>
-        <div class="signup" id = "signup-form">
-            <button id="close-signup">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            
-            <form action="">
-                <Label>Sign Up</Label>
-                <input type="text" name="name" id="name" placeholder="Full Name">
-                <input type="email" id = "signup-email" placeholder="example@example.com">
-                <input type="password" id = "signup-password" placeholder="Password">
-                <input type="submit" value="Sign up">
-                
-            </form>
-            <div class="other-signup-actions">
-                <button id = "have-acc">Already have account? Log in.</button>
-            </div>   
-            
+      </div>
+      <div class="signup" id="signup-form">
+        <button id="close-signup">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <form action="">
+          <label>Sign Up</label>
+          <input type="text" name="name" id="name" placeholder="Full Name" />
+          <input
+            type="email"
+            id="signup-email"
+            placeholder="example@example.com"
+          />
+          <input type="password" id="signup-password" placeholder="Password" />
+          <input type="submit" value="Sign up" />
+        </form>
+        <div class="other-signup-actions">
+          <button id="have-acc">Already have account? Log in.</button>
         </div>
+      </div>
     </div>
     <div class="summer">
-        <h2>New summer collection next month <a href="#">Learn More</a></h2>
-        <div class="summer-img"><img src="../images/posters-hello-summer-banner-typography-poster-with-sun-and-lettering-sunny-design-for-beach-party-summer-collection-clothes-social-media-content.jpg-removebg-preview.png" alt=""></div>
+      <h2>New summer collection next month <a href="#">Learn More</a></h2>
+      <div class="summer-img">
+        <img
+          src="../images/posters-hello-summer-banner-typography-poster-with-sun-and-lettering-sunny-design-for-beach-party-summer-collection-clothes-social-media-content.jpg-removebg-preview.png"
+          alt=""
+        />
+      </div>
     </div>
     <div class="product-list-tools">
-        <p>Sort by: </p>
-        <select name="sort" id="">
-            <option value="top-rated" selected>Top rated</option>
-            <option value="low-to-high">Low-to-high</option>
-            <option value="high-to-low">High-to-low</option>
-            <option value="most-ordered">Most ordered</option>
-        </select>
+      <p>Sort by:</p>
+      <select name="sort" id="">
+        <option value="top-rated" selected>Top rated</option>
+        <option value="low-to-high">Low-to-high</option>
+        <option value="high-to-low">High-to-low</option>
+        <option value="most-ordered">Most ordered</option>
+      </select>
     </div>
-    
-    <div class="product-list">
-        <ul>
-            <li>
-                <div class="product-img-container">
-                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                </div>
-                <div class="product-tools">
-                    <button id="add-to-cart">Add to cart</button>
-                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
-                </div>
-                <div class="product-description">
-                    <div class="rate">
-                        <p>rate</p>
-                        <div class="rate-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </div>
-                    </div>
-                    <h2>New Balance NB99 A13</h2>
-                    <div class="price"><span>125$</span> 110$</div>
-                </div>
-            </li>
-            <li>
-                <div class="product-img-container">
-                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                </div>
-                <div class="product-tools">
-                    <button id="add-to-cart">Add to cart</button>
-                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
-                </div>
-                <div class="product-description">
-                    <div class="rate">
-                        <p>rate</p>
-                        <div class="rate-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </div>
-                    </div>
-                    <h2>New Balance NB99 A13</h2>
-                    <div class="price"><span>125$</span> 110$</div>
-                </div>
-            </li>
-            <li>
-                <div class="product-img-container">
-                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                </div>
-                <div class="product-tools">
-                    <button id="add-to-cart">Add to cart</button>
-                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
-                </div>
-                <div class="product-description">
-                    <div class="rate">
-                        <p>rate</p>
-                        <div class="rate-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </div>
-                    </div>
-                    <h2>New Balance NB99 A13</h2>
-                    <div class="price"><span>125$</span> 110$</div>
-                </div>
-            </li>
-            <li>
-                <div class="product-img-container">
-                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                </div>
-                <div class="product-tools">
-                    <button id="add-to-cart">Add to cart</button>
-                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
-                </div>
-                <div class="product-description">
-                    <div class="rate">
-                        <p>rate</p>
-                        <div class="rate-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </div>
-                    </div>
-                    <h2>New Balance NB99 A13</h2>
-                    <div class="price"><span>125$</span> 110$</div>
-                </div>
-            </li>
-            <li>
-                <div class="product-img-container">
-                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                </div>
-                <div class="product-tools">
-                    <button id="add-to-cart">Add to cart</button>
-                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
-                </div>
-                <div class="product-description">
-                    <div class="rate">
-                        <p>rate</p>
-                        <div class="rate-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </div>
-                    </div>
-                    <h2>New Balance NB99 A13</h2>
-                    <div class="price"><span>125$</span> 110$</div>
-                </div>
-            </li>
-            <li>
-                <div class="product-img-container">
-                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                </div>
-                <div class="product-tools">
-                    <button id="add-to-cart">Add to cart</button>
-                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
-                </div>
-                <div class="product-description">
-                    <div class="rate">
-                        <p>rate</p>
-                        <div class="rate-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </div>
-                    </div>
-                    <h2>New Balance NB99 A13</h2>
-                    <div class="price"><span>125$</span> 110$</div>
-                </div>
-            </li>
-            <li>
-                <div class="product-img-container">
-                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                </div>
-                <div class="product-tools">
-                    <button id="add-to-cart">Add to cart</button>
-                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
-                </div>
-                <div class="product-description">
-                    <div class="rate">
-                        <p>rate</p>
-                        <div class="rate-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </div>
-                    </div>
-                    <h2>New Balance NB99 A13</h2>
-                    <div class="price"><span>125$</span> 110$</div>
-                </div>
-            </li>
-            <li>
-                <div class="product-img-container">
-                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                </div>
-                <div class="product-tools">
-                    <button id="add-to-cart">Add to cart</button>
-                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
-                </div>
-                <div class="product-description">
-                    <div class="rate">
-                        <p>rate</p>
-                        <div class="rate-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </div>
-                    </div>
-                    <h2>New Balance NB99 A13</h2>
-                    <div class="price"><span>125$</span> 110$</div>
-                </div>
-            </li>
-            <li>
-                <div class="product-img-container">
-                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                </div>
-                <div class="product-tools">
-                    <button id="add-to-cart">Add to cart</button>
-                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
-                </div>
-                <div class="product-description">
-                    <div class="rate">
-                        <p>rate</p>
-                        <div class="rate-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </div>
-                    </div>
-                    <h2>New Balance NB99 A13</h2>
-                    <div class="price"><span>125$</span> 110$</div>
-                </div>
-            </li>
-            <li>
-                <div class="product-img-container">
-                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                </div>
-                <div class="product-tools">
-                    <button id="add-to-cart">Add to cart</button>
-                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
-                </div>
-                <div class="product-description">
-                    <div class="rate">
-                        <p>rate</p>
-                        <div class="rate-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </div>
-                    </div>
-                    <h2>New Balance NB99 A13</h2>
-                    <div class="price"><span>125$</span> 110$</div>
-                </div>
-            </li>
-            <li>
-                <div class="product-img-container">
-                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                </div>
-                <div class="product-tools">
-                    <button id="add-to-cart">Add to cart</button>
-                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
-                </div>
-                <div class="product-description">
-                    <div class="rate">
-                        <p>rate</p>
-                        <div class="rate-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </div>
-                    </div>
-                    <h2>New Balance NB99 A13</h2>
-                    <div class="price"><span>125$</span> 110$</div>
-                </div>
-            </li>
-            <li>
-                <div class="product-img-container">
-                    <img src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png" alt="">
-                </div>
-                <div class="product-tools">
-                    <button id="add-to-cart">Add to cart</button>
-                    <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
-                </div>
-                <div class="product-description">
-                    <div class="rate">
-                        <p>rate</p>
-                        <div class="rate-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </div>
-                    </div>
-                    <h2>New Balance NB99 A13</h2>
-                    <div class="price"><span>125$</span> 110$</div>
-                </div>
-            </li>
-        </ul>
 
-        <div class="next-previous">
-            <button><i class="fa-solid fa-angles-left"></i></button>
-            <div>
-                <span>Previous</span>
-                <span>Next</span>
+    <div class="product-list">
+      <ul>
+        <li>
+          <div class="product-img-container">
+            <img
+              src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="product-tools">
+            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="product-description">
+            <div class="rate">
+              <p>rate</p>
+              <div class="rate-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
             </div>
-            <button><i class="fa-solid fa-angles-right"></i></button>
+            <h2>New Balance NB99 A13</h2>
+            <div class="price"><span>125$</span> 110$</div>
+          </div>
+        </li>
+        <li>
+          <div class="product-img-container">
+            <img
+              src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="product-tools">
+            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="product-description">
+            <div class="rate">
+              <p>rate</p>
+              <div class="rate-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+            <h2>New Balance NB99 A13</h2>
+            <div class="price"><span>125$</span> 110$</div>
+          </div>
+        </li>
+        <li>
+          <div class="product-img-container">
+            <img
+              src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="product-tools">
+            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="product-description">
+            <div class="rate">
+              <p>rate</p>
+              <div class="rate-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+            <h2>New Balance NB99 A13</h2>
+            <div class="price"><span>125$</span> 110$</div>
+          </div>
+        </li>
+        <li>
+          <div class="product-img-container">
+            <img
+              src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="product-tools">
+            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="product-description">
+            <div class="rate">
+              <p>rate</p>
+              <div class="rate-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+            <h2>New Balance NB99 A13</h2>
+            <div class="price"><span>125$</span> 110$</div>
+          </div>
+        </li>
+        <li>
+          <div class="product-img-container">
+            <img
+              src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="product-tools">
+            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="product-description">
+            <div class="rate">
+              <p>rate</p>
+              <div class="rate-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+            <h2>New Balance NB99 A13</h2>
+            <div class="price"><span>125$</span> 110$</div>
+          </div>
+        </li>
+        <li>
+          <div class="product-img-container">
+            <img
+              src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="product-tools">
+            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="product-description">
+            <div class="rate">
+              <p>rate</p>
+              <div class="rate-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+            <h2>New Balance NB99 A13</h2>
+            <div class="price"><span>125$</span> 110$</div>
+          </div>
+        </li>
+        <li>
+          <div class="product-img-container">
+            <img
+              src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="product-tools">
+            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="product-description">
+            <div class="rate">
+              <p>rate</p>
+              <div class="rate-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+            <h2>New Balance NB99 A13</h2>
+            <div class="price"><span>125$</span> 110$</div>
+          </div>
+        </li>
+        <li>
+          <div class="product-img-container">
+            <img
+              src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="product-tools">
+            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="product-description">
+            <div class="rate">
+              <p>rate</p>
+              <div class="rate-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+            <h2>New Balance NB99 A13</h2>
+            <div class="price"><span>125$</span> 110$</div>
+          </div>
+        </li>
+        <li>
+          <div class="product-img-container">
+            <img
+              src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="product-tools">
+            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="product-description">
+            <div class="rate">
+              <p>rate</p>
+              <div class="rate-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+            <h2>New Balance NB99 A13</h2>
+            <div class="price"><span>125$</span> 110$</div>
+          </div>
+        </li>
+        <li>
+          <div class="product-img-container">
+            <img
+              src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="product-tools">
+            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="product-description">
+            <div class="rate">
+              <p>rate</p>
+              <div class="rate-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+            <h2>New Balance NB99 A13</h2>
+            <div class="price"><span>125$</span> 110$</div>
+          </div>
+        </li>
+        <li>
+          <div class="product-img-container">
+            <img
+              src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="product-tools">
+            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="product-description">
+            <div class="rate">
+              <p>rate</p>
+              <div class="rate-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+            <h2>New Balance NB99 A13</h2>
+            <div class="price"><span>125$</span> 110$</div>
+          </div>
+        </li>
+        <li>
+          <div class="product-img-container">
+            <img
+              src="../images/71pcE3HYq8L._AC_UL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="product-tools">
+            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-fav"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="product-description">
+            <div class="rate">
+              <p>rate</p>
+              <div class="rate-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+            <h2>New Balance NB99 A13</h2>
+            <div class="price"><span>125$</span> 110$</div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="next-previous">
+        <button><i class="fa-solid fa-angles-left"></i></button>
+        <div>
+          <span>Previous</span>
+          <span>Next</span>
         </div>
+        <button><i class="fa-solid fa-angles-right"></i></button>
+      </div>
     </div>
 
     <div class="about-us">
-        <h2>E n' E</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime pariatur veniam dolor ex aut deleniti eligendi recusandae fugit vel in consequatur, iste tempore, necessitatibus omnis natus. Eligendi debitis asperiores aperiam!</p>
-        <div>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
+      <h2>E n' E</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime pariatur
+        veniam dolor ex aut deleniti eligendi recusandae fugit vel in
+        consequatur, iste tempore, necessitatibus omnis natus. Eligendi debitis
+        asperiores aperiam!
+      </p>
+      <div>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
     </div>
     <footer>
-        <p>Copyrights &copy; 2022 E n' E. Designed by: <span>Ehab Mohamed and Eyad Elsherif</span></p>
+      <p>
+        Copyrights &copy; 2022 E n' E. Designed by: <span> Eyad Elsherif</span>
+      </p>
     </footer>
-    
+
     <script src="../js/home.js"></script>
-</body>
+  </body>
 </html>

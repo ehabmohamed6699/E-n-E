@@ -381,6 +381,7 @@ button{
     height: 65vh;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     position: relative;}
 .recently-added ul li::before{
     content: "10% off";

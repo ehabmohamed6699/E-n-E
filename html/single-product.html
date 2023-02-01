@@ -1,149 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/single-product.css">
-  <link rel="stylesheet" href="../css/nav-footer.css">
-  <link rel="stylesheet" href="../css/fontawesome.min.css">
-  <link rel="stylesheet" href="../css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/single-product.css" />
+    <link rel="stylesheet" href="../css/nav-footer.css" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
 
     <title>E n' E | Single Product</title>
-</head>
-<body>
-
-  
-  <!-- nav start -->
-  <header>
-    <div class="social">
+  </head>
+  <body>
+    <!-- nav start -->
+    <header>
+      <div class="social">
         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-github"></i></a>
         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-    </div>
-    <div class="call-us">
+      </div>
+      <div class="call-us">
         <a href="tel:+201128336536">Call: +201128336536</a>
-    </div>
-  </header>
-  <div class="navigation-bar">
-    <h1>E n' E</h1>
-    <button id="menu"><i class="fa-solid fa-bars"></i></button>
-    <div class="menu">
-      <a href="home.html">Home</a>
-      <a href="men.html">Men</a>
-      <a href="women.html">Women</a>
-      <a href="feedback.html">Feedback</a>
-    </div>
-    <div class="tools">
-        <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </header>
+    <div class="navigation-bar">
+      <h1>E n' E</h1>
+      <button id="menu"><i class="fa-solid fa-bars"></i></button>
+      <div class="menu">
+        <a href="home.html">Home</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="feedback.html">Feedback</a>
+      </div>
+      <div class="tools">
+        <button id="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
         <button id="user"><i class="fa-solid fa-user"></i></button>
         <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
     </div>
-  </div>
-  <div id = "drop-down" class="drop-down-menu">
+    <div id="drop-down" class="drop-down-menu">
       <a href="home.html">Home</a>
       <a href="men.html">Men</a>
       <a href="women.html">Women</a>
       <a href="feedback.html">Feedback</a>
-  </div>
-  <div class="search" id = "search-box">
-      <input type="text" name="search" id="search-value" placeholder="Example: Nike">
-      <button id="search-for"><i class="fa-solid fa-magnifying-glass"></i></button>
-  </div>
-  <div class="user-container" id = "user-container-content">
-      <div class="login" id = "login-form">
-          <button id="close-login">
-              <i class="fa-solid fa-xmark"></i>
-          </button>
-          
-          <form action="">
-              <Label>Log In</Label>
-              <input type="email" id = "login-email" placeholder="example@example.com">
-              <input type="password" id = "login-password" placeholder="Password">
-              <input type="submit" value="Log in">
-          </form>
-          <div class="other-login-actions">
-              <a href="#">Forgot Your Password?</a>
-              <button id = "create-acc">Create Account</button>
-          </div> 
-          
-      </div>
-      <div class="signup" id = "signup-form">
-          <button id="close-signup">
-              <i class="fa-solid fa-xmark"></i>
-          </button>
-          
-          <form action="">
-              <Label>Sign Up</Label>
-              <input type="text" name="name" id="name" placeholder="Full Name">
-              <input type="email" id = "signup-email" placeholder="example@example.com">
-              <input type="password" id = "signup-password" placeholder="Password">
-              <input type="submit" value="Sign up">
-              
-          </form>
-          <div class="other-signup-actions">
-              <button id = "have-acc">Already have account? Log in.</button>
-          </div>   
-          
-      </div>
-  </div>
-
-  <!-- nav end -->
-
-  <main>
-    <section class="img-section">
-      <div id="main-image"></div>
-      <div class="small-images">
-        <img src="../images/image-product-1-thumbnail.jpg" alt="" class="thumb">
-        <img src="../images/image-product-2-thumbnail.jpg" alt="" class="thumb active">
-        <img src="../images/image-product-3-thumbnail.jpg" alt="" class="thumb">
-        <img src="../images/image-product-4-thumbnail.jpg" alt="" class="thumb">
-      </div>
-    </section>
-
-    <section class="txt-section">
-      <p class="company">Nike</p>
-      <p class="name">Fall limited edition sneakers</p>
-      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque a quia, perspiciatis qui voluptate voluptas, libero veritatis animi quis reprehenderit adipisci eligendi incidunt! Esse ullam magni quidem nemo molestias!</p>
-      <div class="price">
-        <p class="current">$125.00</p>
-        <p class="discount">50%</p>
-        <p class="previous">$250.00</p>
-      </div>
-      <div class="buy">
-        <div class="count">
-          <button class="plus">+</button>
-          <div class="num">0</div>
-          <button class="minus">-</button>
-        </div>
-        <button class="cart">
-          <i class="fa-solid fa-cart-shopping"></i>
-          add to cart
+    </div>
+    <div class="search" id="search-box">
+      <input
+        type="text"
+        name="search"
+        id="search-value"
+        placeholder="Example: Nike"
+      />
+      <button id="search-for">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+    <div class="user-container" id="user-container-content">
+      <div class="login" id="login-form">
+        <button id="close-login">
+          <i class="fa-solid fa-xmark"></i>
         </button>
-      </div>
-    </section>
-  </main>
-  
-  <!-- footer start -->
 
-  <div class="about-us">
+        <form action="">
+          <label>Log In</label>
+          <input
+            type="email"
+            id="login-email"
+            placeholder="example@example.com"
+          />
+          <input type="password" id="login-password" placeholder="Password" />
+          <input type="submit" value="Log in" />
+        </form>
+        <div class="other-login-actions">
+          <a href="#">Forgot Your Password?</a>
+          <button id="create-acc">Create Account</button>
+        </div>
+      </div>
+      <div class="signup" id="signup-form">
+        <button id="close-signup">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <form action="">
+          <label>Sign Up</label>
+          <input type="text" name="name" id="name" placeholder="Full Name" />
+          <input
+            type="email"
+            id="signup-email"
+            placeholder="example@example.com"
+          />
+          <input type="password" id="signup-password" placeholder="Password" />
+          <input type="submit" value="Sign up" />
+        </form>
+        <div class="other-signup-actions">
+          <button id="have-acc">Already have account? Log in.</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav end -->
+
+    <main>
+      <section class="img-section">
+        <div id="main-image"></div>
+        <div class="small-images">
+          <img
+            src="../images/image-product-1-thumbnail.jpg"
+            alt=""
+            class="thumb"
+          />
+          <img
+            src="../images/image-product-2-thumbnail.jpg"
+            alt=""
+            class="thumb active"
+          />
+          <img
+            src="../images/image-product-3-thumbnail.jpg"
+            alt=""
+            class="thumb"
+          />
+          <img
+            src="../images/image-product-4-thumbnail.jpg"
+            alt=""
+            class="thumb"
+          />
+        </div>
+      </section>
+
+      <section class="txt-section">
+        <p class="company">Nike</p>
+        <p class="name">Fall limited edition sneakers</p>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque a
+          quia, perspiciatis qui voluptate voluptas, libero veritatis animi quis
+          reprehenderit adipisci eligendi incidunt! Esse ullam magni quidem nemo
+          molestias!
+        </p>
+        <div class="price">
+          <p class="current">$125.00</p>
+          <p class="discount">50%</p>
+          <p class="previous">$250.00</p>
+        </div>
+        <div class="buy">
+          <div class="count">
+            <button class="plus">+</button>
+            <div class="num">0</div>
+            <button class="minus">-</button>
+          </div>
+          <button class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            add to cart
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer start -->
+
+    <div class="about-us">
       <h2>E n' E</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime pariatur veniam dolor ex aut deleniti eligendi recusandae fugit vel in consequatur, iste tempore, necessitatibus omnis natus. Eligendi debitis asperiores aperiam!</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime pariatur
+        veniam dolor ex aut deleniti eligendi recusandae fugit vel in
+        consequatur, iste tempore, necessitatibus omnis natus. Eligendi debitis
+        asperiores aperiam!
+      </p>
       <div>
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
-  </div>
-  <footer>
-      <p>Copyrights &copy; 2022 E n' E. Designed by: <span>Ehab Mohamed and Eyad Elsherif</span></p>
-  </footer>
+    </div>
+    <footer>
+      <p>
+        Copyrights &copy; 2022 E n' E. Designed by: <span> Eyad Elsherif</span>
+      </p>
+    </footer>
 
-  <script src="../js/home.js"></script>
-  
-  <!-- footer end -->
-  
-</body>
+    <script src="../js/home.js"></script>
+
+    <!-- footer end -->
+  </body>
 </html>
